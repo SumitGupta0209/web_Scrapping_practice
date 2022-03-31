@@ -30,8 +30,8 @@ function cb2(error,response,html){
     }else{
         const dom = new JSDOM(html);
         const document = dom.window.document;
-        let playerDetail = document.querySelector(".player-card-padding .player_overview-grid");
-        let playerH5 = playerDetail.querySelectorAll("div h5");
+       // let playerDetail = document.querySelector(".player-card-padding .player_overview-grid");
+        let playerH5 = document.querySelectorAll(".player_overview-grid div");
         let fullName = playerH5[0].textContent;
         let DOB = playerH5[1].textContent;
         console.log("Full Name : ",fullName," Date of Birth : ",DOB);

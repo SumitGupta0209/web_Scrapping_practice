@@ -19,9 +19,9 @@ function cb(error,response,html)
         const document =  dom.window.document;
         let mostWicket = 0;
         let nameOfHighestWicketTacker = "";
-        let bowlersTable = document.querySelectorAll(".table.bowler");
+        let bowlersTable = document.querySelectorAll(".table.bowler"); //array milta hai idhr se
         for(let i=0;i<bowlersTable.length;i++){
-            let rows = bowlersTable[i].querySelectorAll("tbody tr");
+            let rows = bowlersTable[i].querySelectorAll("tbody tr"); //table body k andr array 
             for(let j=0;j<rows.length;j++){
                 let tds = rows[j].querySelectorAll("td");
                 if(tds.length>1){
